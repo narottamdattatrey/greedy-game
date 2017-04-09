@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js overflow-h">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Store</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="src/app.css">
+    <!-- endinject -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="assets/vendors/angular-material.css">
+    <!-- endinject -->
+</head>
+
+<body>
+    <navbar></navbar>
+    <library></library>
+    <div ng-view></div>
+    <!-- <div class="footer-version">Version<span app-version></span></div> -->
+    <!-- bower:js -->
+    <script src="assets/vendors/angular.js"></script>
+    <script src="assets/vendors/lodash.js"></script>
+    <script src="assets/vendors/angular-animate.js"></script>
+    <script src="assets/vendors/angular-aria.js"></script>
+    <script src="assets/vendors/angular-messages.js"></script>
+    <script src="assets/vendors/angular-resource.js"></script>
+    <script src="assets/vendors/angular-route.js"></script>
+    <script src="assets/vendors/restangular.js"></script>
+    <script src="assets/vendors/angular-material.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="src/components/version/version.js"></script>
+    <script src="src/components/version/version-directive.js"></script>
+    <script src="src/components/version/interpolate-filter.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/common/navbar/navbar_directive.js"></script>
+    <script src="src/common/library/library_directive.js"></script>
+    <script src="src/common/library/library_controller.js"></script>
+    <script src="src/header/header.js"></script>
+    <script src="src/common/genres_service.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>

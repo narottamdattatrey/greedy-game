@@ -1,0 +1,25 @@
+{
+  "name": "webapp",
+  "description": "Music store",
+  "main": "app.js",
+  "authors": [
+    "Narottam"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "restangular": "^1.6.1",
+    "angular-material": "^1.1.3",
+    "ng-resource": "^0.0.2",
+    "angular-resource": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}

@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<div ng-controller="LibraryController" layout="column" class="layout-fill">
+    <div flex="66" layout-align="center center" layout="column">
+        <h2>Music tracks</h2>
+        <md-input-container layout="row">
+            <label>search by title</label>
+            <input type="text" ng-model="playlistSearchTitle" ng-keypress="getDetailsByTitle()" aria-label="search" placeholder="Search title...">
+            <md-icon class="material-icons">search</md-icon>
+        </md-input-container>
+        <md-input-container layout="row">
+            <label>search by id</label>
+            <input type="number" ng-model="playlistSearchId" ng-keypress="getDetailsByID()" aria-label="search" placeholder="Search title...">
+            <md-icon class="material-icons">search</md-icon>
+        </md-input-container>
+        <div>
+            <md-card class="pad-box-10">
+                <p>result is :{{searchResult}}</p>
+            </md-card>
+        </div>
+        <div>
+            <md-button ng-click="addNewTrack()">Add New Track</md-button>
+        </div>
+    </div>
+    <div layout="row" class="overflow-y lib" ng-init="library()">
+        <md-card class="list-card" ng-repeat="p in data" layout-align="space-between center">
+            <p>{{p.id}}.&nbsp;&nbsp;{{p.name}}</p>
+            <i class="material-icons">star_rate</i>
+        </md-card>
+    </div>
+</div>
