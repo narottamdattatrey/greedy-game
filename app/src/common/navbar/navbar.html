@@ -1,12 +1,48 @@
-<div>
-    <md-toolbar layout="row" layout-align="space-between center" class="global-navbar">
+<div ng-controller="NavbarController" class="navbar">
+    <md-toolbar layout="row" layout-align="space-between center" class="global-navbar no-btn">
         <div layout="row" layout-align="start center">
-          <i class="material-icons">library_music</i>
-            <h3 class="pad-l-10">MyMusic Store</h3>
-          </div>
+            <md-button class="icon-button" ng-click="toggleLeft()">
+                <i class="material-icons">reorder</i>
+            </md-button>
+        </div>
         <md-button class="icon-button">
-            <i class="material-icons">queue_music</i>
-            <md-tooltip>library</md-tooltip>
+            <i class="material-icons">notifications</i>
+            <md-tooltip>Notifications</md-tooltip>
         </md-button>
     </md-toolbar>
+    <!-- search -->
+    <div layout="row" layout-align="space-between center" class="sub-border">
+        <div layout="row" layout-align="start center" class="search-bar">
+            <i class="material-icons">search</i>
+            <md-input-container class="md-icon-float md-block margin-0" md-no-float>
+                <input ng-model="search" type="text" placeholder="Search here">
+            </md-input-container>
+        </div>
+        <div>{{currentDate | date:'MMM d, y h:mm:ss a'}}</div>
+    </div>
+    <!-- sidenav -->
+    <div>
+        <md-sidenav class="md-sidenav-left" md-component-id="left" md-escape-to-close="true" md-whiteframe="4">
+            <md-content layout-margin class="company">
+                <div class="company-profile">
+                    <!-- <img class="company-image" src="" alt="no image available"> -->
+                </div>
+                <h2>company profile</h2>
+                <md-list flex>
+                    <md-list-item class="md-3-line" ng-repeat="item in dashboards" ng-click="goToPage(item.label)">
+                        <i class="material-icons" alt="{{item.label}}">{{item.icon}}</i>
+                        <div class="md-list-item-text" layout="column">
+                            <p>{{ item.label }}</p>
+                        </div>
+                    </md-list-item>
+                    <md-divider></md-divider>
+                </md-list>
+            </md-content>
+            <div class="version">
+                <i class="material-icons">verified_user</i>
+                <span class="v-version">VERSION 1.0</span>
+            </div>
+        </md-sidenav>
+    </div>
+    <!-- end of sidenav -->
 </div>

@@ -1,0 +1,92 @@
+<meta charset="utf-8">
+<div flex layout="column" class="LoginContainer profile overflow-xy" ng-controller="ProfileController">
+    <div layout="row" layout-align="start center" style="min-height: 56px;">
+        <md-content layout="row" layout-align="space-between center" class="full">
+            <div layout="row">
+                <md-button ng-click="toggleLeft()" class="md-raised no-btn">
+                    <i class="material-icons">reorder</i>
+                </md-button>
+                <md-input-container md-no-float class="md-block" layout="row">
+                    <i class="material-icons">search</i>
+                    <input ng-model="search" type="text" placeholder="Search User">
+                </md-input-container>
+            </div>
+            <md-button ng-click="addNewUser()" class="no-btn">
+                <i class="material-icons">add_circle</i>
+            </md-button>
+        </md-content>
+    </div>
+
+    <div class="pad-24">
+        <!-- analytics section -->
+        <div layout="row" class="parts">
+            <div layout="column" class="user-analytics">
+                <h2>Users</h2>
+                <div layout="row">
+                    <div layout="column" flex layout-align="center center" class="sub-part" ng-repeat="item in userList">
+                        <div>{{item.data}}</div>
+                        <div>{{item.status}}</div>
+                    </div>
+                </div>
+            </div>
+            <div layout="column" class="team-analytics">
+                <h2>Teams</h2>
+                <div layout="row">
+                    <div layout="column" flex layout-align="center center" class="sub-part" ng-repeat="item in subDashboardData">
+                        <div>{{item.data}}</div>
+                        <div>{{item.label}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of analytics section -->
+        <!-- Table section -->
+        <div class="table-section">
+            <table class="profile-employee-table">
+                <thead>
+                    <tr>
+                        <td ng-repeat="item in employeeTable">
+                            {{item}}
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in employeeData">
+                        <td>{{item.image}}</td>
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.contact}}</td>
+                        <td>{{item.email}}</td>
+                        <td>{{item.status}}</td>
+                        <td> {{item.team}}</td>
+                        <td>{{item.deviceVersion}}</td>
+                        <td>{{item.appVersion}}</td>
+                        <td>{{item.action}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- table pagination -->
+        <div class="t-pagination">
+            <div layout="row" layout-align="space-between center">
+                <div></div>
+                <div layout="row">
+                    <md-button  class="md-raised no-btn-pagination" style="line-height: 54px;">
+                            <i class="material-icons">keyboard_arrow_left</i>
+                    </md-button>
+                    <md-button class="md-raised no-btn-pagination" ng-repeat="i in totalIndex">
+                        {{i}}
+                    </md-button>
+                    <md-button  class="md-raised no-btn-pagination" style="line-height: 54px;">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                    </md-button>
+                </div>
+            </div>
+        </div>
+        <!-- end of table section -->
+    </div>
+    <div layout="row" flex>
+
+       
+    </div>
+</div>

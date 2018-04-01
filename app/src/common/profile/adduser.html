@@ -1,0 +1,72 @@
+<md-dialog class="new" flex="50">
+    <div class="md-toolbar-tools">
+        <h2>Add User</h2>
+        <span flex></span>
+    </div>
+    <div class="add-user">
+        <div>
+            <md-content class="md-no-momentum add-usr-content" layout="row">
+                <div flex="auto">
+                    <div layout="row">
+                        <md-input-container class="md-icon-float md-block">
+                            <label>First Name</label>
+                            <input ng-model="name" type="text" placeholder="First Name">
+                        </md-input-container>
+
+                        <md-input-container md-no-float class="md-block">
+                            <label>Last Name</label>
+                            <input ng-model="lastName" type="text" placeholder="Last Name">
+                        </md-input-container>
+                    </div>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>Email</label>
+                            <input ng-model="email" type="email" placeholder="Email">
+                        </md-input-container>
+
+                        <md-input-container class="md-block">
+                            <label>Phone Number</label>
+                            <input ng-model="phone" type="text" placeholder="Phone Number">
+                        </md-input-container>
+                    </div>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>User id</label>
+                            <input ng-model="userid" type="text" placeholder="User id">
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                            <label>Password</label>
+                            <input ng-model="Password" type="password" placeholder="Password">
+                        </md-input-container>
+                    </div>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>Is Manager</label>
+                            <input ng-model="isManager" type="text" placeholder="Is Manager">
+                        </md-input-container>
+
+                        <md-input-container class="md-block">
+                            <label>User id</label>
+                            <input ng-model="userId" type="text" placeholder="User id">
+                        </md-input-container>
+                    </div>
+                    <div layout="row">
+                        <md-input-container class="md-block">
+                            <label>Reporting To</label>
+                            <input ng-model="reportingTo" type="password" placeholder="Reporting To">
+                        </md-input-container>
+                    </div>
+                </div>
+                <div style="width:120px;">
+                    <img src="../../../images/snowflake.png" style="width:120px;">
+                    <!-- <label f>Upload Files</label>
+                    <input type="file" style="display:none;" #f/> -->
+                </div>
+            </md-content>
+        </div>
+        <div layout="row" layout-align="end end">
+            <md-button>cancel</md-button>
+            <md-button>Add USER</md-button>
+        </div>
+    </div>
+</md-dialog>

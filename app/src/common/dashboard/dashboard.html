@@ -1,0 +1,66 @@
+<div class="v-dashboard" layout="column" flex ng-controller="DashboardController">
+    <div class="user-dashboard" layout="row" flex>
+        <div class="user-map" flex="80">
+            <div id="map"></div>
+        </div>
+        <div class="user-status" flex="20">
+            <md-content>
+                <md-card>
+                    <md-toolbar class="u-toolbar">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline">Attdence</span>
+                            </md-card-title-text>
+                        </md-card-title>
+                    </md-toolbar>
+                    <md-card-content>
+                        <div flex layout="row">
+                            <p flex="50">In</p>
+                            <p flex="50">12am</p>
+                        </div>
+                        <div flex layout="row">
+                            <p flex="50">In</p>
+                            <p flex="50">12am</p>
+                        </div>
+                    </md-card-content>
+                </md-card>
+                <md-card>
+                    <md-toolbar class="u-toolbar">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline">Distance</span>
+                            </md-card-title-text>
+                        </md-card-title>
+                    </md-toolbar>
+                    <md-card-content>
+                        <div flex layout="row">
+                            <p>120pk</p>
+                        </div>
+                    </md-card-content>
+                </md-card>
+                <md-card>
+                    <md-toolbar class="u-toolbar">
+                        <md-card-title>
+                            <md-card-title-text>
+                                <span class="md-headline">Time On Field</span>
+                            </md-card-title-text>
+                        </md-card-title>
+                    </md-toolbar>
+                    <md-card-content>
+                        <div flex layout="row">
+                            <p>12:00hr</p>
+                        </div>
+                    </md-card-content>
+                </md-card>
+            </md-content>
+        </div>
+    </div>
+    <div class="user-form">
+        <div>
+            <md-card ng-repeat="item in formData">
+                <label>{{item.label}}</label>
+                <p>0</p>
+            </md-card>
+        </div>
+    </div>
+</div>

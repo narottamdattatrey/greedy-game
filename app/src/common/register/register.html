@@ -1,0 +1,101 @@
+<meta charset="utf-8">
+<div flex layout="row" class="RegisterContainer fill-layout" ng-controller="RegistrationController">
+  <div flex>
+  </div>
+  <div flex layout="column" class="login-card-container">
+    <div flex layout="row" layout-align="center center">
+      <form class="pad-box-10 FormInputs flex-wrap" layout="row"  method="post" name="registerForm" autocomplete="on" id="registerform" ng-submit="register()" novalidate>
+        <md-input-container md-no-float>
+          <input name="firstName" type="text" placeholder="First Name" ng-model="user.firstName" ng-trim="false" no-spaces required />
+          <div ng-messages="registerForm.firstName.$error || registerForm.$submitted">
+            <div ng-message="required">Please enter your first name</div>
+          </div>
+        </md-input-container>
+        <md-input-container md-no-float>
+          <input name="lastName" type="text" autocomplete="off" placeholder="Last Name" ng-model="user.lastName" no-spaces required
+          />
+          <div ng-messages="registerForm.lastName.$error || registerForm.$submitted">
+            <div ng-message="required">Please enter your last name.</div>
+          </div>
+        </md-input-container>
+        <md-input-container md-no-float>
+            <input name="username" type="text" placeholder="Username" ng-model="user.username" ng-trim="false" no-spaces required />
+            <div ng-messages="registerForm.username.$error || registerForm.$submitted">
+              <div ng-message="required">Please enter your username</div>
+            </div>
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="countryCode" type="text" autocomplete="off" placeholder="Country Code" ng-model="user.countryCode" no-spaces required
+            />
+            <div ng-messages="registerForm.countryCode.$error || registerForm.$submitted">
+              <div ng-message="required">Please enter your country code.</div>
+            </div>
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="mobile" type="number" placeholder="Mobile Number" ng-model="user.mobile" ng-trim="false" no-spaces required />
+            <div ng-messages="registerForm.mobile.$error || registerForm.$submitted">
+              <div ng-message="required">Please enter your mobile number</div>
+            </div>
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="email" type="email" placeholder="E-mail ID" ng-model="user.email" ng-trim="false" no-spaces required />
+            <div ng-messages="registerForm.email.$error || registerForm.$submitted">
+              <div ng-message="required">Please enter your email address</div>
+            </div>
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="imei" type="text" autocomplete="off" placeholder="IMEI number" ng-model="user.imei" no-spaces required
+            />
+            <div ng-messages="registerForm.imei.$error || registerForm.$submitted">
+              <div ng-message="required">Please enter your imei.</div>
+            </div>
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="designation" type="text" autocomplete="off" placeholder="Designation" ng-model="user.designation" no-spaces required
+            />
+            <div ng-messages="registerForm.designation.$error || registerForm.$submitted">
+              <div ng-message="required">Please enter your designation.</div>
+            </div>
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="zone" type="text" autocomplete="off" placeholder="Zone" ng-model="user.zone"
+            />
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="manager" type="text" autocomplete="off" placeholder="Manager" ng-model="user.manager"
+            />
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="company" type="text" autocomplete="off" placeholder="Company" ng-model="user.company"
+            />
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="password" type="password" autocomplete="off" placeholder="Password" ng-model="user.password" no-spaces required
+            />
+            <div ng-messages="registerForm.password.$error || registerForm.$submitted">
+              <div ng-message="required">Please enter your password.</div>
+            </div>
+          </md-input-container>
+          <md-input-container md-no-float>
+            <input name="deviceToken" type="text" autocomplete="off" placeholder="Device Token" ng-model="user.deviceToken"
+            />
+          </md-input-container>
+          <md-input-container md-no-float>
+                <select ng-model="user.deviceType">
+                    <option value="" disabled="disabled" selected="selected">Select Device Type</option>
+                    <option value="android">Android</option>
+                    <option value="ios">ios</option>
+                    <option value="web">Web</option>
+                </select>
+            
+            
+          </md-input-container>
+        <!-- ng-click is added for a purpuse to show error message when user doesn't interact with
+        element and submits the form-->
+        <md-button type="submit" class="margin-0 margin-td-20 pad-lr-10 LoginSubmit md-primary md-light md-raised">
+          Log In
+        </md-button>
+      </form>
+    </div>
+  </div>
+</div>

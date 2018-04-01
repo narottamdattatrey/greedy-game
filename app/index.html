@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Music Store</title>
+    <!-- <title>Music Store</title> -->
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- material icons -->
@@ -18,10 +18,13 @@
 </head>
 
 <body>
-    <navbar></navbar>
-    <library></library>
-    <div ng-view></div>
+    <!-- <navbar></navbar> -->
+    <!-- <login></login> -->
+    <!-- <profile></profile> -->
+    <div ui-view class="fill-layout"></div>
     <!-- <div class="footer-version">Version<span app-version></span></div> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP9i_TV9ptnGRbqd-KtsJ1FXY-0F_sPEo">
+    </script> -->
     <!-- bower:js -->
     <script src="assets/vendors/angular.js"></script>
     <script src="assets/vendors/lodash.js"></script>
@@ -30,20 +33,38 @@
     <script src="assets/vendors/angular-messages.js"></script>
     <script src="assets/vendors/angular-resource.js"></script>
     <script src="assets/vendors/angular-route.js"></script>
+    <script src="assets/vendors/angular-ui-router.js"></script>
+    <script src="assets/vendors/jquery.js"></script>
+    <script src="assets/vendors/dynamic-forms.js"></script>
     <script src="assets/vendors/restangular.js"></script>
     <script src="assets/vendors/angular-material.js"></script>
+    <script src="assets/vendors/jquery-ui-sortable.min.js"></script>
+    <script src="assets/vendors/jquery-ui-sortable.js"></script>
+    <script src="assets/vendors/form-builder.min.js"></script>
     <!-- endinject -->
     <!-- inject:js -->
     <script src="src/components/version/version.js"></script>
     <script src="src/components/version/version-directive.js"></script>
     <script src="src/components/version/interpolate-filter.js"></script>
     <script src="src/app.js"></script>
+    <script src="src/common/visionform/visionform_controller.js"></script>
+    <script src="src/common/register/registration_service.js"></script>
+    <script src="src/common/register/register_controller.js"></script>
+    <script src="src/common/profile/profile_directive.js"></script>
+    <script src="src/common/profile/profile_controller.js"></script>
     <script src="src/common/navbar/navbar_directive.js"></script>
+    <script src="src/common/navbar/navbar_controller.js"></script>
+    <script src="src/common/login/login_directive.js"></script>
+    <script src="src/common/login/login_controller.js"></script>
+    <script src="src/common/login/auth_service.js"></script>
     <script src="src/common/library/library_directive.js"></script>
     <script src="src/common/library/library_controller.js"></script>
+    <script src="src/common/dashboard/dashboard_directive.js"></script>
+    <script src="src/common/dashboard/dashboard_controller.js"></script>
     <script src="src/header/header.js"></script>
     <script src="src/common/genres_service.js"></script>
     <!-- endinject -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.1/jquery.rateyo.min.js"></script> -->
 </body>
 
 </html>

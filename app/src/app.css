@@ -1,7 +1,12 @@
 /* app css stylesheet */
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0px !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* margin: 0px !important; */
 }
 
 md-toolbar {
@@ -40,9 +45,18 @@ i {
     min-height: 84px;
 }
 
+.margin-0 {
+    margin: 0;
+}
+
+.search-bar {
+    padding: 8px 24px;
+}
+
 .global-navbar {
     padding-left: 5%;
     padding-right: 5%;
+    background-color: #048fb0 !important;
 }
 
 .icon-button {
@@ -51,6 +65,28 @@ i {
     padding: 0px !important;
     margin: 0px !important;
     height: 24px !important;
+}
+
+.navbar md-input-container .md-errors-spacer {
+    min-height: 0;
+}
+
+.search-bar input {
+    border: none !important;
+    min-width: 240px;
+}
+
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused .md-input,
+md-input-container:not(.md-input-invalid).md-input-focused .md-input,
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-resized .md-input,
+md-input-container:not(.md-input-invalid).md-input-resized .md-input {
+    border-color: #048fb0;
+}
+
+.sub-border {
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    padding: 0 24px;
 }
 
 .overflow-h {
@@ -63,4 +99,294 @@ i {
 
 .overflow-y {
     overflow-y: auto;
+}
+
+.login-card-container {
+    min-width: 400px;
+}
+
+.LoginContainer {
+    height: 100%;
+}
+
+.login-card-container {
+    background: #2196F3;
+}
+
+.login-card-container md-input-container {
+    margin: 0;
+}
+
+.md-sidenav-left,
+md-sidenav {
+    background-color: #048fb0;
+}
+
+.company-image {
+    width: 120px;
+    height: 120px;
+}
+
+.company-profile {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto !important;
+    margin-top: 34px !important;
+}
+
+.company h2 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.version {
+    position: absolute;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    color: #06cbfa;
+}
+
+.v-version {
+    margin-left: 4px;
+}
+
+md-sidenav.md-default-theme,
+md-sidenav,
+md-sidenav.md-default-theme md-content,
+md-sidenav md-content {
+    background: transparent;
+}
+
+md-list-item.md-3-line::before,
+md-list-item.md-3-line>.md-no-style::before {
+    min-height: 48px;
+}
+
+md-list-item.md-3-line,
+md-list-item.md-3-line>.md-no-style {
+    min-height: 48px !important;
+}
+
+md-list-item.md-3-line::before,
+md-list-item.md-3-line>.md-no-style::before {
+    min-height: 48px !important;
+}
+
+md-list-item.md-2-line .md-list-item-text p,
+md-list-item.md-2-line>.md-no-style .md-list-item-text p,
+md-list-item.md-3-line .md-list-item-text p,
+md-list-item.md-3-line>.md-no-style .md-list-item-text p {
+    color: #fff;
+    margin-left: 4px !important;
+    text-transform: uppercase;
+}
+
+md-list-item.md-no-proxy,
+md-list-item .md-no-style {
+    color: #fff;
+}
+
+.profile md-input-container.md-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.no-btn {
+    box-shadow: none !important;
+    min-width: 64px !important;
+    height: 48px;
+    line-height: 64px !important;
+}
+
+.full {
+    width: 100%;
+}
+
+.user-analytics {
+    background-color: #048fb0;
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    padding: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.sub-part {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.user-analytics h2 {
+    text-align: center;
+    padding: 8px;
+    margin: 0 !important;
+}
+
+.team-analytics {
+    background-color: #06cbfa;
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    padding: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.team-analytics h2 {
+    text-align: center;
+    padding: 8px;
+    margin: 0 !important;
+}
+
+.parts {
+    margin-bottom: 24px;
+}
+
+.table-section {
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.profile-employee-table {
+    width: 100%;
+}
+
+.pad-24 {
+    padding: 24px;
+}
+
+.profile-employee-table tr {
+    width: 100%;
+    height: 42px;
+}
+
+.profile-employee-table thead {
+    width: 100%;
+    height: 42px;
+}
+
+.profile-employee-table thead td {
+    min-width: 120px;
+    height: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 900;
+    color: gray;
+    letter-spacing: 0.05em;
+}
+
+.add-user md-input-container {
+    margin: 4px 10px 4px 0;
+}
+
+.add-usr-content {
+    background: #ffffff;
+    padding: 24px;
+}
+
+.overflow-xy {
+    overflow: auto;
+}
+
+.profile-employee-table tbody {
+    background-color: #f6f9fc;
+}
+
+.t-pagination {
+    height: 36px;
+    background-color: #ffffff;
+}
+
+.no-btn-pagination {
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    height: 36px !important;
+}
+
+.new .md-toolbar-tools {
+    min-height: 48px;
+}
+
+.v-dashboard {
+    height: 100%;
+    background: #f3f3f3;
+    overflow: auto;
+}
+
+#map {
+    height: 100%;
+}
+
+.u-toolbar {
+    background: #048fb0 !Important;
+    min-height: 42px !IMPORTANT;
+    HEIGHT: 42PX;
+    LINE-HEIGHT: 42PX;
+    TEXT-ALIGN: CENTER;
+}
+
+md-card md-card-title{
+    padding: 0 !important;
+}
+.u-toolbar .md-headline {
+    font-size: 20px;
+    font-weight: 600;
+}
+/* classes for formbulder */
+.form-rendered #build-wrap {
+    display: none;
+  }
+  
+  .fill-layout {
+      height: 100%;
+  }
+  .render-wrap {
+    display: none;
+  }
+  
+  .form-rendered .render-wrap {
+    display: block;
+  }
+  
+  #edit-form {
+    display: none;
+    float: right;
+  }
+  
+  .form-rendered #edit-form {
+    display: block;
+  }
+/* end of classes for formbilder   */
+
+/* register  */
+.register-card-container md-input-container {
+    margin: 0;
+    width: 45%;
+    padding: 0 2%;
+}
+.register-card-container{
+    min-width: 400px;
+    background: #2196F3;
+}
+.flex-wrap{
+    flex-wrap: wrap;
 }

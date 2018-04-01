@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<div flex layout="row" class="LoginContainer" ng-controller="LoginController">
+  <div flex>
+  </div>
+  <div flex layout="column" class="login-card-container">
+    <div flex layout="row" layout-align="center center">
+      <form class="pad-box-10 FormInputs" layout="column" method="post" name="loginForm" autocomplete="on" id="loginform" novalidate>
+        <md-input-container md-no-float>
+          <input name="email" type="email" placeholder="E-mail ID" ng-model="user.username" ng-trim="false" no-spaces required />
+          <div ng-messages="loginForm.email.$error || loginForm.$submitted">
+            <div ng-message="required">Please enter your email address</div>
+          </div>
+        </md-input-container>
+        <md-input-container md-no-float>
+          <input name="password" type="password" autocomplete="off" placeholder="Password" ng-model="user.password" no-spaces required
+          />
+          <div ng-messages="loginForm.password.$error || loginForm.$submitted">
+            <div ng-message="required">Please enter your password.</div>
+          </div>
+        </md-input-container>
+        <!-- ng-click is added for a purpuse to show error message when user doesn't interact with
+        element and submits the form-->
+        <md-button type="submit" ng-click="" witty-click="loginForm.$valid ? login() : noop()" class="margin-0 margin-td-20 pad-lr-10 LoginSubmit md-primary md-light md-raised">
+          Log In
+        </md-button>
+      </form>
+    </div>
+  </div>
+</div>

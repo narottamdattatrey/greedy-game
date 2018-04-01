@@ -1,0 +1,12 @@
+/* .LoginContainer {
+    background: $page-background;
+    .LoginTitle {
+      text-align: center;
+      color: $secondary-text-color;
+    }
+  } */
+  .login-card-container{
+    min-width:400px;
+  }
+  
+  

@@ -1,0 +1,6 @@
+<div id="build-wrap" ng-if="!formData"></div>
+
+<dynamic-form ng-if="formData" template="formTemplate"
+        ng-model="formData"
+        ng-submit="processForm()">
+</dynamic-form>
